@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 -Smooth Scroll</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            font-family: sans-serif;
+        }
+
+        .banner1,
+        .banner2,
+        .banner3,
+        .banner4 {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        img {
+            width: 120%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: zoom-out 3s linear infinite;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+        }
+        @keyframes zoom-out{
+            100%{
+                width:100%;
+            }
+        }
+
+        .text-box {
+            width: 600px;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            color: #fff;
+            animation: textup 3s linear infinite;
+            transform: translateY(100px);
+        }
+
+        .text-box h1 {
+            margin-bottom: 40px;
+        }
+
+        .text-box p {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 80px;
+        }
+
+        .text-box span {
+            background: red;
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            left: 0;
+        }
+
+        .banner1 {
+            animation: slide1 12s linear infinite;
+        }
+
+        .banner2 {
+            animation: slide2 12s linear infinite;
+        }
+
+        .banner3 {
+            animation: slide3 12s linear infinite;
+        }
+
+        .banner4 {
+            animation: slide4 12s linear infinite;
+        }
+
+        @keyframes slide1 {
+            0% {
+                visibility: visible;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+
+        @keyframes slide2 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: visible;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes slide3 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: visible;
+            }
+
+            100% {
+                visibility: hidden;
+            }
+        }
+
+        @keyframes slide4 {
+            0% {
+                visibility: hidden;
+            }
+
+            25% {
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: hidden;
+            }
+
+            75% {
+                visibility: hidden;
+            }
+
+            100% {
+                visibility: visible;
+            }
+        }
+        
+        @keyframes textup{
+            10%{
+               transform: translateY(0px);
+            }
+            100%{
+               transform: translateY(0px);
+            }
+        }
+        .text-box1{
+            animation-delay: 0s;
+        }
+        .text-box2{
+            animation-delay: 3s;
+        }
+        .text-box3{
+            animation-delay: 6s;
+        }
+        .text-box4{
+            animation-delay: 9s;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="banner1">
+            <img src="images/slide1.jpg" />
+            <div class="text-box text-box1">
+                <h1>Stay Home and Safe Work</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro a ratione commodi enim quos placeat, perspiciatis beatae eligendi quisquam doloribus. Repudiandae, accusantium, excepturi! Eveniet eaque ullam atque reiciendis iure.</p>
+            </div>
+        </div>
+        <div class="banner2">
+            <img src="images/slide2.jpg" />
+            <div class="text-box text-box2">
+                <h1>Work from Home</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro a ratione commodi enim quos placeat, perspiciatis beatae eligendi quisquam doloribus. Repudiandae, accusantium, excepturi! Eveniet eaque ullam atque reiciendis iure.</p>
+            </div>
+        </div>
+        <div class="banner3">
+            <img src="images/slide3.jpg" />
+            <div class="text-box text-box3">
+                <h1>This is the future for next generation</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro a ratione commodi enim quos placeat, perspiciatis beatae eligendi quisquam doloribus. Repudiandae, accusantium, excepturi! Eveniet eaque ullam atque reiciendis iure.</p>
+            </div>
+        </div>
+        <div class="banner4">
+            <img src="images/slide4.jpg" />
+            <div class="text-box text-box4">
+                <h1>Know your passion</h1>
+                <span></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae porro a ratione commodi enim quos placeat, perspiciatis beatae eligendi quisquam doloribus. Repudiandae, accusantium, excepturi! Eveniet eaque ullam atque reiciendis iure.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

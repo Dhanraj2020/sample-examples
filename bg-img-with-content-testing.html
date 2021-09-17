@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .col-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .col {
+            flex: 1;
+            padding: 16px;
+        }
+
+        .bgImg {
+            background: url(vision-banner.jpg)no-repeat;
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            background-size: cover;
+        }
+
+        @media(max-width:767px) {
+            .col-container,
+            .col {
+                display: block;
+            }
+        }
+
+        @media(min-width:767px) {
+            .col-container {
+                display: block;
+            }
+
+            .bgImg {
+                min-height: 450px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Equal Height Columns with Flexbox</h2>
+    <p>Make the columns match the height of the tallest column.</p>
+
+    <div class="col-container">
+        <div class="col bgImg">&nbsp;</div>
+
+        <div class="col" style="background:yellow">
+            <h2>OUR VISION</h2>
+            <p>It is our vision that every child, male and female, should have access to a good education, and thus we strive to catalyze a continued increase in school attendance figures in some of the poorer areas of Afghanistan. We also believe that many older members of society who missed out on receiving an education should be supported with regards to literacy and numeracy. In this way, we believe that we can help to empower members of the Afghan community across multiple generations.</p>
+            <p>We also believe in rebuilding the rich Afghan Society, which has been forgotten and mistreated over years of struggle, and once again make it strong and inclusive. With a focus on education, cultural development, and women in society, we believe we can reestablish firm foundations, and develop the communities to nurture the Afghan society back to full health.</p>
+            <p>We focus on women, as not only have they suffered the most through the difficult times, but also they are the cornerstone of any rich and strong society. We believe that by helping to educate, empower, and enrich the lives of the mothers in society, we can plant a seed for future growth, which we nurture even more-so with our focus on youth education.</p>
+            <p>We are proud of the diverse culture of our wonderful country, and wish to focus on reigniting the richness of our heritage in order to redevelop firm foundations on which to grow. The people of Afghanistan have suffered, and now we are committed to working hard to restore their confidence, faith, strength, and pride in their country.</p>
+
+
+            <p>We are proud of the diverse culture of our wonderful country, and wish to focus on reigniting the richness of our heritage in order to redevelop firm foundations on which to grow. The people of Afghanistan have suffered, and now we are committed to working hard to restore their confidence, faith, strength, and pride in their country.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
